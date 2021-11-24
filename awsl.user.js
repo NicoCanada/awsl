@@ -40,8 +40,17 @@
         if (textarea.value == '请输入转发理由') {
           textarea.value = '';
         }
-        textarea.value = word + textarea.value;
-        submit.click();
+        if (word == '打卡'){
+          const startDate = new Date(2021, 8, 16, 3);
+          let today = Date.now();
+          let days = Math.round((today - startDate)/ (1000 * 60 * 60 * 24));
+          let daka = `#加拿大vip代购# \n#每天俯卧撑# 第${days}天打卡 \r#每日跑步打卡# 6公里`;
+                                
+          textarea.value = daka + textarea.value;
+        } else {
+          textarea.value = word + textarea.value;
+          submit.click();
+        }     
         for (const btn of buttons) {
           btn.classList.add('W_btn_b_disable');
         }
