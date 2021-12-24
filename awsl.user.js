@@ -18,7 +18,7 @@
 
 (() => {
 
-  const DEFAULT_WORDS = '草;awsl';
+  const DEFAULT_WORDS = '草;awsl;打卡';
   const MAX_WORDS = 3;
 
   async function recreateButtonsV6(buttonBar, extraBar, textarea, submit) {
