@@ -43,7 +43,7 @@
         if (word == '打卡'){
           // const startDate = new Date(2021, 8, 16, 3);
           // changed to the last day of 2021
-          const startDate = new Date(2021, 12, 31, 3);
+          const startDate = new Date(2022, 0, 1, 3);
           let today = Date.now();
           let days = Math.round((today - startDate)/ (1000 * 60 * 60 * 24));
           let daka = `#加拿大vip代购# \n#每天俯卧撑# 第${days}天打卡 \r#每日跑步打卡# 6公里`;
